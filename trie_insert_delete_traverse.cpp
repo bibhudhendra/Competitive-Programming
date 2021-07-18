@@ -56,6 +56,11 @@ void delete_(TrieNode* node, string s, int index) {
     else {
         
         delete_(mp[s[index]], s, index+1);
+        TrieNode *nextNode = mp[s[index]];
+        if(nextNode->mp.size() == 0) {
+            delete nextNode;
+            mp.erase(mp.find(s[index]));
+        }
     }
 }
 
