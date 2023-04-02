@@ -1,2 +1,7 @@
+# Files
 a.out
-./a.out
+output.txt 
+
+.DS_Store
+
+.vscode
