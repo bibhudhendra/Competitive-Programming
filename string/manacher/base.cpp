@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+
 vector<int> manacher(string s) {
 
     int len = s.length();
@@ -35,4 +37,8 @@ vector<int> manacher(string s) {
     }
     cout << loop << endl;
     return ans;
+}
+
+int main() {
+    manacher("Hello");
 }
